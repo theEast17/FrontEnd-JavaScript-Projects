@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600&family=Roboto+Slab&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins;
+  background-color: aliceblue;
+}
+header {
+  max-width: 1600px;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  border-bottom: 1px solid #ddd;
+}
+.game_category {
+  padding: 2rem;
+}
+.game_category p {
+  margin-bottom: 1rem;
+}
+nav li {
+  margin: 0.2rem;
+  list-style-type: none;
+}
+a {
+  color: black;
+  text-decoration: underline;
+}
+.game_details {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 2rem;
+}
+.game_details h1 {
+  font-size: 3.5em;
+  max-width: 800px;
+  margin-bottom: 1rem;
+}
+.game_details .game_img {
+  width: 100%;
+  border: 5px solid black;
+  object-fit: contain;
+
+  /* display: block;
+    margin: 0 auto; */
+}
+.game_details p {
+  font-size: 0.9rem;
+  text-align: justify;
+  padding: 0.6rem 0;
+  color: #777;
+}
+.game_intro {
+  padding: 2rem;
+}
+.game_intro h3 {
+  margin-bottom: 0.5rem;
+}
+.game_intro p {
+  font-size: 0.9rem;
+}
+footer {
+  padding: 2rem;
+}
+footer p {
+  text-align: center;
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+    .game_category {
+      grid-column: span 3;
+      border-bottom: 1px solid #ddd;
+    }
+    .game_category nav {
+      display: flex;
+      column-gap: 0.8rem;
+    }
+    .game_details {
+      grid-column: span 2;
+      border-left: none;
+    }
+    aside{
+      padding: 1rem;
+    }
+  }
+
+
+  @media screen and (max-width: 990px) {
+    .game_details,.game_category,aside{
+        grid-column: span 3;
+    }
+    .game_category {
+      border-bottom: 1px solid #ddd;
+    }
+    .game_category nav {
+      display: flex;
+      column-gap: 0.8rem;
+    }
+    .game_details {
+      border-left: none;
+      border-bottom: 1px solid #ddd;
+    }
+    aside{
+        padding: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 746px) {
+    .game_details,.game_category,aside{
+        grid-column: span 3;
+    }
+    .game_category {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+    .game_category p{
+        text-align: center;
+    }
+    .game_category nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.8rem;
+    }
+    .game_details {
+      border-left: none;
+      border-bottom: 1px solid #ddd;
+    }
+    .game_details h1{
+        font-size: 2em;
+    }
+    aside{
+        padding: 1rem;
+    }
+  }
