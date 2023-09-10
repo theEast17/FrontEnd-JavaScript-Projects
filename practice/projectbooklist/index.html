@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style12.css" />
+    <title>Booklist app</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../Project11Portfolio/Images/logo.png" alt="" />
+
+      <form id="book-form">
+        <div>
+          <label for="title">Title</label><br />
+          <input type="text" placeholder="Enter Book Title" class="BookTitle" />
+        </div>
+        <div>
+          <label for="author">Author</label><br />
+          <input
+            type="text"
+            placeholder="Enter Book Author"
+            class="BookAuthor"
+          />
+        </div>
+
+        <div>
+          <label for="id">Book id</label><br />
+          <input type="text" placeholder="Enter Book Id" class="BookId" />
+        </div>
+
+        <input type="submit" class="submit" value="Add Book" />
+      </form>
+
+      <table class="tableItem">
+        <thead>
+          <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Book Id</td>
+            <td>Delete</td>
+          </tr>
+        </thead>
+
+        <tbody class="bookList">
+           
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+<script src="main.js"></script>
