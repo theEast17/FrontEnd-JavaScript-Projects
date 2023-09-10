@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Awesome Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style10.css">
+    <title>Dashboard using html css And javascript</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-brands fa-apple"></i></span>
+                        <span class="title">TheEast</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-phone"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-message"></i></span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-question"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-right-to-bracket"></i></span>
+                        <span class="title">SignOut</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+
+        <div class="topbar">
+            <div class="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="search">
+                <div>
+                    <input type="text" placeholder="Search Here">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+            </div>
+
+            <div class="user">
+                <img src="../images/testimonial3.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+        <!-- cards -->
+        <div class="cardBox">
+            <div class="card">
+                <div>
+                    <h1><strong>1504</strong></h1>
+                    <p>Daily Views</p>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-eye"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h1><strong>80</strong></h1>
+                    <p>Sales</p>
+                </div>
+                <div class="iconBox">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h1><strong>284</strong></h1>
+                    <p>Comments</p>
+                </div>
+                <div class="iconBox">
+                    <i class="fas fa-comment"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h1><strong>$7,865</strong></h1>
+                    <p>Earnings</p>
+                </div>
+                <div class="iconBox">
+                    <i class="fa-solid fa-sack-dollar"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="graphBox">
+            <div class="box">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="box">
+                <canvas id="earning"></canvas>
+            </div>
+        </div>
+
+        <!-- recentORDERS -->
+        <div class="details">
+            <div class="recent_orders">
+                <div class="cardHeader">
+                    <h1>Recent Orders</h1>
+                    <a href="" class="btn">View All</a>
+                </div>
+                
+                <table>
+                        <thead>
+                        <tr style="pointer-events: none;">
+                            <td>Name</th>
+                            <td>Price</th>
+                            <td>Payment</th>
+                            <td>Status</th>
+                        </tr>
+                        </thead>
+    
+                        <tbody>
+                        <tr>
+                            <td>Window Coaster</td>
+                            <td>$100</td>
+                            <td>Paid</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                           
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>$300</td>
+                            <td>Due</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr>
+                            <td>Will Johnson</td>
+                            <td>$1300</td>
+                            <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr>
+                            <td>william Dutch</td>
+                            <td>$300</td>
+                            <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr>
+                            <td>Eleven Henger</td>
+                            <td>$1000</td>
+                            <td>Paid</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr>
+                            <td>Faulkner James</td>
+                            <td>$100</td>
+                            <td>Due</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr>
+                            <td>Steve Robbs</td>
+                            <td>$250</td>
+                            <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr>
+                            <td>Ninja sky</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+                        </tbody>
+    
+                        <tbody>
+                        <tr class="noBorder"> 
+                            <td>Jonathan Sparkle</td>
+                            <td>$400</td>
+                            <td>Due</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="recent_customers">
+                <div class="cardHeader">
+                    <h1>Recent Customers</h1>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <div class="imgBox">
+                                <img src="../images/testimonial3.jpg" alt="">
+                            </div>
+                        </td>
+
+                        <td>
+                            <h4>David <br><span>Italy</span></h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="imgBox">
+                                <img src="../images/calvin-lupiya--yPg8cusGD8-unsplash.jpg" alt="">
+                            </div>
+                        </td>
+
+                        <td>
+                            <h4>Officia <br><span>California</span></h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="imgBox">
+                                <img src="../images/christopher-campbell-va0YmkIFtPA-unsplash.jpg" alt="">
+                            </div>
+                        </td>
+
+                        <td>
+                            <h4>Srenny<br><span>Russia</span></h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="imgBox">
+                                <img src="../images/mountainboy (1).jpg" alt="">
+                            </div>
+                        </td>
+
+                        <td>
+                            <h4>Hassaan Ali <br><span>India</span></h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="imgBox">
+                                <img src="../images/tamara-bellis--XGhtJXY-yY-unsplash.jpg" alt="">
+                            </div>
+                        </td>
+
+                        <td>
+                            <h4>Alexa <br><span>Argentina</span></h4>
+                        </td>
+                    </tr>
+
+                    
+                </table>
+
+
+
+        </div>
+
+    </main>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script src="main.js"></script>
+<script src="my_chart.js"></script>
